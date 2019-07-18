@@ -15,7 +15,6 @@ This buildsystem for the LEDE Linux distribution has been modified by Onion Corp
 ## Additional Reading
 
 * See `CHANGELOG.md` for a listing of the changes for each firmware version and build
-* See `DISCLAIMER.md` for Onion's disclaimer regarding this build system
 
 # Using this Build System
 
