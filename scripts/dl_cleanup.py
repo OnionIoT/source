@@ -7,7 +7,7 @@
 # Copyright (C) 2013-2015 OpenWrt.org
 """
 
-from __future__ import print_function
+
 
 import sys
 import os
@@ -212,7 +212,7 @@ def main(argv):
 	# Create a map of programs
 	progmap = {}
 	for entry in entries:
-		if entry.progname in progmap.keys():
+		if entry.progname in list(progmap.keys()):
 			progmap[entry.progname].append(entry)
 		else:
 			progmap[entry.progname] = [entry,]

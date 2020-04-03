@@ -80,7 +80,7 @@ def setConfigFile(configFile):
 		os.remove(linkConfigPath)
 		
 	if os.path.isfile(targetConfigPath):
-		print("   Config: %s"%configFile)
+		print(("   Config: %s"%configFile))
 		os.symlink(targetConfigPath, linkConfigPath)
 		
 
@@ -88,8 +88,8 @@ def setConfigFile(configFile):
 def setupBuild():
 	info = getBuildInfo()
 
-	print "   Version: %s"%info["version"]
-	print "   Build: %s"%info['build']
+	print("   Version: %s"%info["version"])
+	print("   Build: %s"%info['build'])
 	
 	updateFwInfo(info['build'], info["version"])
 
@@ -106,12 +106,12 @@ if __name__ == "__main__":
 	if args.build_number > 0:
 		setBuildNumber(args.build_number)
 	
-	print '*'*20
+	print('*'*20)
 	
 	setupBuild()
 	setConfigFile(args.config)
 	
-	print '*'*20
+	print('*'*20)
 	
 
 	
