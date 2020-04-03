@@ -385,6 +385,9 @@ ramips_board_detect() {
 	*"Onion Omega2 Pro")
 		name="omega2pro"
 		;;
+	*"Onion Omega2 Dash")
+		name="omega2dash"
+		;;
 	*"Onion Omega2 LTE")
 		name="omega2lte"
 		;;

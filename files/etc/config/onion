@@ -10,3 +10,8 @@ config console 'console'
         option webcam '0'
         option nodered '0'
 
+config oupgrade 'oupgrade'
+        option api_url 'https://api.onioniot.com/firmware'
+        option ack_upgrade '1'
+        option auto_update '0'
+        option update_frequency 'monthly'

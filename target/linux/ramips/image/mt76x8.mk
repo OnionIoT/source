@@ -114,6 +114,14 @@ define Device/omega2pro
 endef
 TARGET_DEVICES += omega2pro
 
+define Device/omega2dash
+  DTS := OMEGA2DASH
+  IMAGE_SIZE := $(ralink_default_fw_size_32M)
+  DEVICE_TITLE := Onion Omega2 Dash
+  DEVICE_PACKAGES:= kmod-usb2 kmod-usb-ohci uboot-envtools kmod-sdhci-mt7620 omega2-dash-base
+endef
+TARGET_DEVICES += omega2dash
+
 define Device/omega2lte
   DTS := OMEGA2LTE
   IMAGE_SIZE := $(ralink_default_fw_size_32M)

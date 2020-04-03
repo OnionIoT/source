@@ -222,6 +222,34 @@ Initial firmware sent to be flashed at the factory
 ### Build Notes
 Defining the changes in each build. *Note that if a number is missing, that build failed the deployment process.*
 
+#### b237, b236, b235
+*Mar 24,20,19 2020*
+
+* oupgrade updated, now includes:
+    * ability to specify firmware API URL
+    * auto-update functionality
+    * update acknowledgement
+
+#### b234
+*Feb 25, 2020*
+
+* Omega2 Dash now shows a boot message on the physical display
+
+#### b233
+*Dec 6, 2019*
+
+* Added Omega2 Dash device
+
+#### b232
+*Dec 4, 2019*
+
+* Added `fbi` package to software repo
+
+#### b231
+*August 26, 2019*
+
+* Added wireguard package and associated dependencies to Onion package repo
+
 #### b230
 *August 1, 2019*
 

@@ -57,6 +57,7 @@ ramips_setup_interfaces()
 	omega2 | \
 	omega2p | \
 	omega2pro | \
+	omega2dash | \
 	omega2lte | \
 	timecloud|\
 	w150m|\
@@ -510,7 +511,10 @@ ramips_setup_macs()
 		lan_mac=$(macaddr_add "$lan_mac" 2)
 		;;
 	omega2|\
-	omega2p)
+	omega2p|\
+	omega2pro | \
+	omega2dash | \
+	omega2lte)
 		wan_mac=$(mtd_get_mac_binary factory 4)
 		lan_mac=$(mtd_get_mac_binary factory 46)
 		;;

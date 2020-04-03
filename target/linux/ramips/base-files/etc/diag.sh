@@ -230,6 +230,7 @@ get_status_led() {
 	omega2| \
 	omega2p| \
 	omega2pro| \
+	omega2dash| \
 	omega2lte)
 		status_led="$boardname:amber:system"
 		;;
