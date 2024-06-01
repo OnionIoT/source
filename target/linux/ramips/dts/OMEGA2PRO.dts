@@ -21,7 +21,7 @@
 };
 
 &firmware {
-	reg = <0x50000 0xfb0000>;
+	reg = <0x50000 0x1f30000>;
 };
 
 &system_led {

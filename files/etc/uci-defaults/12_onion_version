@@ -1,8 +1,8 @@
 #!/bin/sh
 
 uci -q batch <<-EOF > /dev/null
-	set onion.@onion[0].version='0.3.3'
-	set onion.@onion[0].build='252'
+	set onion.@onion[0].version='0.3.4'
+	set onion.@onion[0].build='258'
 	commit onion
 EOF
 

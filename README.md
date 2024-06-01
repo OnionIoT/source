@@ -100,11 +100,20 @@ docker pull onion/omega2-source
 ```
 docker run -it onion/omega2-source /bin/bash
 ```
-4. Your container will now be up and running! You'll be using it for the rest of the steps outlined below.
+4. Your container will now be up and running! Let's make sure the package feeds are up to date and configured:
+```
+sh scripts/onion-feed-setup.sh
+python scripts/onion-setup-build.py
+```
+> This will initialize & configure all the package feeds as well as setup the `.config` file to match this repo. With these commands, the firmware built will match the official firmware released by Onion.
+
+5. Your docker container is now ready to be used for the rest of the steps outlined below.
 
 ### Option B: Using a Linux System
 
 **Not recommended for beginners**
+
+> Note that when using Ubuntu, 18.04 is required. Using a later version will not build.
 
 Procedure to setup the build system on a Ubuntu Linux System:
 
@@ -163,6 +172,8 @@ To update all of the feeds, run this command:
 #### "Installing" New Packages
 
 If new packages have been added to the package feeds, they will not show up in the `menuconfig` until "installed" to the build system using `./scripts/feeds install <PKG NAME>`.
+
+You can also "install" all package feeds by running `./scripts/feeds install -a`. This is recommended since they will all show up in the `menuconfig`, from there you can select what packages to build and/or include in your firmware.
 
 See the [OpenWRT documentation on the feeds script](https://openwrt.org/docs/guide-developer/feeds#working_with_feeds) for more info.
 

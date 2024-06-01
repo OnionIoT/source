@@ -27,6 +27,11 @@ The build number will continuously increment over the course of development.
 ### Versions
 Definining the differences in each version change
 
+#### 0.3.4
+
+* Full support for [new Omega2 MAC address range](https://onion.io/new-mac-address-range-2022/)
+* Fix for OpenWRT package repo URLs
+
 #### 0.3.3
 
 Enhancements:
@@ -231,6 +236,37 @@ Initial firmware sent to be flashed at the factory
 
 ### Build Notes
 Defining the changes in each build. *Note that if a number is missing, that build failed the deployment process.*
+
+#### b258
+*Feb 15, 2024*
+
+* Fix for Omega2 Pro DTS - now using all 32 MB of flash storage for initial image
+
+#### b257
+*Jun 28, 2022*
+
+**Moving to v0.3.4**
+
+* Fix for OpenWRT package repo URLs
+    * OpenWRT removed `18.06-SNAPSHOT` packages, this is what firmware used to point to
+    * Firmware is now built to point to `18.06.1` packages - see [opkg documentation](https://docs.onion.io/omega2-docs/using-opkg.html#using-opkg-switch-to-lede-repos) for more info
+
+#### b256
+*Nov 24, 2022*
+
+* Updated ethernet mode script to support new MAC address range for manufacturing purposes
+
+#### b255
+*Nov 18, 2022*
+
+* Warp core update
+* No longer compiling python twisted package - fixing build issue
+
+
+#### b253
+*Feb 8, 2022*
+
+* Updated omega2-base package self reporting script to include a checksum 
 
 #### b252
 *Jan 27, 2022*
