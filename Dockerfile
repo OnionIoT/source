@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 MAINTAINER Lazar Demin (lazar@onion.io)
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y \
     unzip \
     libssl-dev \
     python-dev \
-    python-pip \
+    python3-pip \
     libxml-parser-perl \
     default-jdk
 
